@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>
+int main(void){
+    // Your code here!
+    int n = 50;
+    int dem = 0;
+    
+     printf("So luong so chinh phuong nho hon %d la : ", n);
+     
+    for (int i = 1 ; i <= n ; i++)
+    {
+        if (KT_CP(i) )
+        {
+            dem++;
+            printf(" %d ",i);
+        }
+    }
+    
+   
+    
+}
+
+
+int KT_CP(int n)
+{
+   int x = sqrt(n);
+   if (x*x == n )
+   {
+       return 1;
+   }
+   else
+   {
+       return 0;
+   }
+   
+   
+    
+}
